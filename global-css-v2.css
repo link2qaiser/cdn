@@ -1,0 +1,121 @@
+/*
+ *
+ * CREATED AT 28 AUGUST 2018
+ * AUTHER : QAISER
+ * TWITTER: @LINK2QAISER
+ *
+ */
+ 
+ /*
+ Content
+ 1. Global Funtion
+    a) CSS For text area increase height with content
+    b) extractExtension()
+    c) converToSEO()
+    d) addWait()
+    e) removeWait()
+    f) addWaitWithoutText()
+    g) removeWaitWithoutText()
+    h) ImportaddWaitWithoutText()
+    i) afterAajaxCall()
+    
+ */
+ /*
+ ----------------------------- START - CSS For text area increase height with content ---------------------------------
+ */
+.grow-wrap {
+  display: grid;
+}
+.grow-wrap::after {
+  content: attr(data-replicated-value) " ";
+  white-space: pre-wrap;
+  visibility: hidden;
+}
+.grow-wrap > textarea {
+  resize: none;
+  overflow: hidden;
+}
+.grow-wrap > textarea,
+.grow-wrap::after {
+  border: 1px solid black;
+  padding: 0.5rem;
+  font: inherit;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+ /*
+ ----------------------------- START - Comment box with screenshot upload ---------------------------------
+ */
+.comments_container .images-list {
+  margin-bottom: 10px;
+}
+.comments_container .images-list > div{
+  background-color: #f0efff;
+  padding: 2px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+.comments_container .images-list  .upload{
+  font-style: italic;
+}
+.comments_container .images-list  .delete{
+  float: right;
+  margin-right: 10px;
+}
+.comments_container .comment-list > div{
+  background-color: #f0efff;
+  border:solid 1px #D8D5FF;
+  border-radius: 2px;
+
+  margin-bottom: 4px;
+}
+.comments_container .comment-list div div{
+  padding: 6px 10px 6px 10px;
+}
+.comments_container .comment-list div img{
+  margin-right: 4px;
+}
+.comments_container .comment-list div p{
+  margin-bottom:0px;
+  margin-top:0px;
+}
+.comments_container .comment-list ul.action {
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 0px;
+  background-color: #d4d2f5;
+
+}
+.comments_container .comment-list ul.action li{
+  display: inline;
+  padding: 0px 4px 2px 4px;
+  
+}
+.comments_container .comment-list ul li.date{
+  font-size: 11pt;
+    color: #585858;
+
+}
+.comments_container .comment-list ul li.delete{
+  float: right;
+  
+}
+/*
+------------------------------------------START - Submit Problem----------------------------------------------
+*/
+#submitProblem .button {
+   background-color: #ff0516;
+   text-align: center;
+   position: fixed;
+   z-index: 10000;
+   right: 0px;
+   bottom: 0px;
+   padding: 4px 6px 4px 6px;
+   text-decoration: none;
+   cursor: pointer;
+   color: #fff;
+}
+#submitProblem img {
+   width: 100%;
+   border: solid 2px #a9a9a9;
+}
